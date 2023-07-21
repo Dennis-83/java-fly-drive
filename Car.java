@@ -1,26 +1,17 @@
 public class Car extends Vehicle implements Driveable{
 
-    private final String brand;
-    private final String type;
     private int gear = 0;
 
     private String color;
     private final double engineDisplacement;
 
     public Car(String brand, String type, String color, double engineDisplacement) {
-        this.brand = brand;
-        this.type = type;
+        super(brand, type);
         this.color = color;
         this.engineDisplacement = engineDisplacement;
     }
 
-    public String getBrand() {
-        return brand;
-    }
 
-    public String getType() {
-        return type;
-    }
 
     public int getGear() {
         return gear;
@@ -47,8 +38,8 @@ public class Car extends Vehicle implements Driveable{
     @Override
     public String toString() {
         return "Car{" +
-                "brand='" + brand + '\'' +
-                ", type='" + type + '\'' +
+                "brand='" + getBrand() + '\'' +
+                ", type='" + getType() + '\'' +
                 ", gear=" + gear +
                 ", color='" + color + '\'' +
                 ", engineDisplacement=" + engineDisplacement +

@@ -1,5 +1,21 @@
 public abstract class Vehicle {
 
+    private final String brand;
+    private final String type;
+
+    public Vehicle(String brand, String type) {
+        this.brand = brand;
+        this.type = type;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getType() {
+        return type;
+    }
+
     public void speed(int speed) {
         System.out.println("This vehicle is going " + speed + "kph");
     }

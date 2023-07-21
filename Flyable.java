@@ -8,7 +8,7 @@ public interface Flyable {
         System.out.println("The vehicle has landed");
     }
 
-    void changeHeight();
+    void changeHeight(int height);
 
 
 }
