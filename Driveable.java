@@ -6,5 +6,5 @@ public interface Driveable {
     default void brake() {
         System.out.println("The vehicle brakes");
     }
-    void changeGear();
+    void changeGear(int gear);
 }
