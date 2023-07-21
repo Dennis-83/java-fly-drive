@@ -15,7 +15,7 @@ public class Main {
         golf.turnOffEngine();
         golf.weight(1150);
 
-
+        System.out.println("------------------");
         Plane a380 = new Plane("Airbus", "A380", "KLM", 4);
         System.out.println(a380);
 
@@ -27,5 +27,13 @@ public class Main {
         a380.changeHeight(0);
         a380.turnOffEngine();
         a380.weight(20000);
+
+        System.out.println("------------------");
+        FlyingCar delorean = new FlyingCar("Delorean", "DMC-12","silver" );
+        System.out.println(delorean);
+        delorean.startEngine();
+        delorean.accelerate();
+        delorean.speed(88);
+        delorean.takeOff();
     }
 }

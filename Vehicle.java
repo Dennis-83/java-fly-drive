@@ -17,7 +17,7 @@ public abstract class Vehicle {
     }
 
     public void speed(int speed) {
-        System.out.println("This vehicle is going " + speed + "kph");
+        System.out.println("This vehicle is going " + speed + "mph");
     }
     public void weight(float weight) {
         System.out.println("This vehicle weighs " + weight + "kg");
