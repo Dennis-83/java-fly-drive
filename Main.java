@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -35,5 +37,16 @@ public class Main {
         delorean.accelerate();
         delorean.speed(88);
         delorean.takeOff();
+
+
+        Airport schiphol = new Airport();
+        System.out.println(schiphol);
+        System.out.println(schiphol.getClass());
+
+        System.out.println(schiphol.airport.get(0));
+        System.out.println(schiphol.airport.get(1));
     }
+
+
+
 }
