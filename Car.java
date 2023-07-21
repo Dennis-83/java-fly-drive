@@ -14,9 +14,44 @@ public class Car extends Vehicle implements Driveable{
         this.engineDisplacement = engineDisplacement;
     }
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getGear() {
+        return gear;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getEngineDisplacement() {
+        return engineDisplacement;
+    }
 
     @Override
     public void changeGear(int gear) {
         this.gear = gear;
+        System.out.println("You shift to gear " + gear);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", type='" + type + '\'' +
+                ", gear=" + gear +
+                ", color='" + color + '\'' +
+                ", engineDisplacement=" + engineDisplacement +
+                '}';
     }
 }
